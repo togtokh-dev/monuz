@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ImageSlider"
+        app:riv_corner_radius="12dp"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/ImageSlider_Text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

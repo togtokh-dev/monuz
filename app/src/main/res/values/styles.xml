@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dual Audio Added this here -->
+    <style name="TrackSelectionDialogThemeOverlay" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowTitleStyle">@style/DialogTitle</item>
+    </style>
+    <style name="DialogTitle">
+        <item name="android:background">@color/Red_Smooth</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SwitchStyle">
+        <item name="colorControlActivated">@color/Yellow</item>
+    </style>
+</resources>

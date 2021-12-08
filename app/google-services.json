@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "580124849043",
+    "project_id": "monuz-bb030",
+    "storage_bucket": "monuz-bb030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580124849043:android:a153213bb4703052452e66",
+        "android_client_info": {
+          "package_name": "com.togtokh.monuz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580124849043-1r1g4lktg5dmlsbcv3i17f32vss0cmfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYeGSDojH4pMgINvfbbZievIEnL_VkFJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580124849043-1r1g4lktg5dmlsbcv3i17f32vss0cmfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

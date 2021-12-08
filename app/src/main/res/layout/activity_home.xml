@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/Home_Background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include android:id="@+id/Home_Layout"
+            layout="@layout/home_layout"/>
+
+        <include android:id="@+id/Search_Layout"
+            layout="@layout/search_layout"
+            android:visibility="gone"/>
+
+        <include android:id="@+id/Movies_Layout"
+            layout="@layout/movies_layout"
+            android:visibility="gone"/>
+
+        <include android:id="@+id/Series_Layout"
+            layout="@layout/series_layout"
+            android:visibility="gone"/>
+
+        <include android:id="@+id/Account_Layout"
+            layout="@layout/account_layout"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Screen_Background"
+        app:itemIconTint="@color/bnv_tab_item_foreground"
+        app:itemRippleColor="@color/Screen_Background"
+        app:itemTextColor="@color/bnv_tab_item_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

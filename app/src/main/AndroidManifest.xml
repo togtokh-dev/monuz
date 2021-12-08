@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.togtokh.monuz">
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Flex"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.togtokh.monuz.LiveTVSearch"
+            android:exported="true" />
+        <activity android:name="com.togtokh.monuz.GenreDetails" />
+        <activity android:name="com.togtokh.monuz.AllGenre" />
+        <activity android:name="com.togtokh.monuz.Downloads" />
+        <activity android:name="com.togtokh.monuz.PrivecyPolicy" />
+        <activity android:name="com.togtokh.monuz.TermsAndConditions" />
+        <activity
+            android:name="com.togtokh.monuz.YoutubeLivePlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.togtokh.monuz.InAppUpdate" />
+        <activity android:name="com.togtokh.monuz.LiveTv" />
+        <activity
+            android:name="com.togtokh.monuz.EmbedPlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.togtokh.monuz.Player"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.togtokh.monuz.SubscriptionDetails" />
+        <activity android:name="com.togtokh.monuz.SubscriptionList" />
+        <activity android:name="com.togtokh.monuz.Subscription" />
+        <activity android:name="com.togtokh.monuz.Favorites" />
+        <activity android:name="com.togtokh.monuz.WebSeriesDetails" />
+        <activity android:name="com.togtokh.monuz.Maintenance" />
+        <activity android:name="com.togtokh.monuz.WebView" />
+        <activity
+            android:name="com.togtokh.monuz.TrailerPlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.togtokh.monuz.MovieDetails" />
+        <activity android:name="com.togtokh.monuz.LoginSignup" />
+        <activity android:name="com.togtokh.monuz.Home" />
+        <activity android:name="com.togtokh.monuz.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_application_id" />
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="@string/startapp_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.adcolony.sdk.AdColonyAdViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>
